@@ -20,7 +20,7 @@ jobs:
       - name: Verificação da chave PEM
         run: echo "$KEY_PATH"
         env:
-          KEY_PATH: ${{ secrets.CHAVE_PEM}}
+          KEY_PATH: ${{ secrets.CHAVE_PEM }}
 
       - name: Adicionar host EC2 ao known_host
         run: |
