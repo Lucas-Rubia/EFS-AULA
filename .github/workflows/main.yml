@@ -1,4 +1,4 @@
-name: automacao_efs
+name: automacao_efss
 run-name: EFS
 on:
   push:
@@ -16,6 +16,7 @@ jobs:
 
       - name: Instalação do SSH
         run: sudo apt-get install -y openssh-client
+
 
       - name: Verificação da chave PEM
         run: echo "$KEY_PATH"
